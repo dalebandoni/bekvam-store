@@ -37,7 +37,7 @@ const CardInfo = styled.div`
 
 const ItemCard = ({ img, name, price }) => {
   return (
-    <Link href='/product/:id'>
+    <Link href={`/product/${encodeURIComponent(name)}`}>
       <Card>
         <img src={img} alt={`picture of ${name}`} className='titleImage' />
         <CardInfo>
