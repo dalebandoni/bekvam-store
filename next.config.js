@@ -8,9 +8,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
-      '/p/hello-nextjs': { page: '/product/[id]' },
-      '/p/learn-nextjs': { page: '/product/[id]' },
-      '/p/deploy-nextjs': { page: '/product/[id]' },
+      '/product/:id': { page: '/product/[id]' },
     }
   },
 }
