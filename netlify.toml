@@ -2,5 +2,3 @@
 publish = "out"
 command = "npm run build"
 functions = "functions"
-[[redirects]]
-  status = 200
