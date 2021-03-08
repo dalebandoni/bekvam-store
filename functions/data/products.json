@@ -5,7 +5,8 @@
     "description": "Made for comfort, these chairs are made with steel legs, fine Swedish leather and soft suede to make every moment sat down an experience you wont want to leave.",
     "image": "../assets/images/productOneImage.png",
     "price": 80,
-    "currency": "USD"
+    "currency": "USD",
+    "id": "1"
   },
   {
     "sku": "DEMO002",
@@ -13,7 +14,8 @@
     "description": "Sturdy and stylish. Made for office environments to spice up your work time. Comes in a variety of colors as well as different shades of wood.",
     "image": "../assets/images/productTwoImage.png",
     "price": 120,
-    "currency": "USD"
+    "currency": "USD",
+    "id": "2"
   },
   {
     "sku": "DEMO003",
@@ -21,7 +23,8 @@
     "description": "Lightweight, versalite comfort. The Segelskepp is a crossroad of form meets function. Winner of style award at the Scandinavian furniture awards 2020.",
     "image": "../assets/images/productThreeImage.png",
     "price": 50,
-    "currency": "USD"
+    "currency": "USD",
+    "id": "3"
   },
   {
     "sku": "DEMO004",
@@ -29,6 +32,7 @@
     "description": "Made to impress. Outforskad is made from the finest Scandinavian mahogany you can find. Our expert crafters have designed and built this chair for ultimate pleasure and aesthetic.",
     "image": "../assets/images/productFourImage.png",
     "price": 150,
-    "currency": "USD"
+    "currency": "USD",
+    "id": "4"
   }
 ]

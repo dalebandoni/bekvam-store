@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import useLocalStorage from '../hooks/useLocalStorage'
 import { theme } from '../Theme'
 import Button from './Button'
 import Container from './Container'
@@ -73,29 +74,33 @@ const ContentWrapper = styled.div`
     margin-top: 50px;
   }
 `
-const ProductDetail = ({ img, name, price, description, extraDescription }) => {
+const ProductDetail = ({ product }) => {
   return (
     <>
       <Section>
         <Container>
           <Button small>GO BACK</Button>
-          {name && (
+          {product.name && (
             <ContentWrapper>
               <div className='imageContainer'>
-                {img && (
-                  <img src={img} alt='product image' className='productImage' />
+                {product.image && (
+                  <img
+                    src={product.image}
+                    alt='product image'
+                    className='productImage'
+                  />
                 )}
               </div>
               <div className='infoContainer'>
                 <div className='mainDetails'>
                   <div className='nameAndPrice'>
-                    <p className='name'>{name}</p>
-                    <p className='price'>${price}</p>
+                    <p className='name'>{product.name}</p>
+                    <p className='price'>${product.price}</p>
                   </div>
-                  <p className='description'>{description}</p>
+                  <p className='description'>{product.description}</p>
                   <CardButton>ADD TO CART</CardButton>
                 </div>
-                {extraDescription && (
+                {product.extraDescription && (
                   <div className='moreDetails'>
                     <p className='title'>More Details</p>
                     <p className='description'>{extraDescription}</p>
@@ -104,7 +109,7 @@ const ProductDetail = ({ img, name, price, description, extraDescription }) => {
               </div>
             </ContentWrapper>
           )}
-          {!name && <h1 className='errorTag'>Product not found.</h1>}
+          {!product.name && <h1 className='errorTag'>Product not found.</h1>}
         </Container>
       </Section>
       <Footer />

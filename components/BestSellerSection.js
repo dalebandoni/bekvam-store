@@ -84,6 +84,7 @@ const BestSellerSection = () => {
                 img={product.image}
                 name={product.name}
                 price={product.price}
+                id={product.id}
               />
             ))}
           </Column>
@@ -94,6 +95,7 @@ const BestSellerSection = () => {
                 img={product.image}
                 name={product.name}
                 price={product.price}
+                id={product.id}
               />
             ))}
           </Column>

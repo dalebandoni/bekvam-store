@@ -4,8 +4,12 @@ import HeaderSection from '../components/HeaderSection'
 import BestSellerSection from '../components/BestSellerSection'
 import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    localStorage.clear()
+  }, [])
   return (
     <div>
       <Head>
