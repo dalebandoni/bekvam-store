@@ -7,7 +7,8 @@ module.exports = {
   ) {
     return {
       '/': { page: '/' },
-      '/product/:id': { page: '/product/[id]' },
+      '/products': { page: '/products' },
+      '/product/': { page: '/product/[id]' },
     }
   },
 }
